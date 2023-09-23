@@ -1,0 +1,171 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    text-align: center;
+}
+#the{
+    font-size: 30px;
+    margin-right: 5px;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
+#siren{
+    font-size: 40px;
+    font-weight: 900;
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+.comps{
+    text-align: center;
+    text-decoration: none;
+}
+#hr{
+    margin-top: 20px;
+    width: 80%;
+    height: 3px;
+    background-color: aqua;
+    border: none;
+}
+
+@media only screen and (max-width:1300px){
+  
+    .h1{
+        width: 100vw;
+        margin: 0;
+        height: 20vh;
+
+    }
+    .nav{
+        width: 100vw;
+        margin: 0;
+        /* position: absolute;
+        top: 25%; */
+    }
+    #the{
+        position: absolute;
+        left: 40%;
+        height: 5vh;
+        width: 15vw;
+      
+        font-size: 15px;
+    }
+    #siren{
+        position: absolute;
+        left: 60%;
+        height: 10vh;
+        width: 25vw ;
+        font-size: 25px;
+    }
+    .main-header{
+        margin: 0;
+    }
+    .home-advertisement{
+        height: 180vh;
+        position: absolute;
+        top: 310%;
+        left: 60%; 
+    }
+
+
+}
+
+
+
+@media only screen and (max-width:810px){
+
+    .h1{
+        width: 100vw;
+        margin: 0;
+        height: 20vh;
+
+    }
+    
+    .mobile-menu-icon{
+        display: block;
+        font-size: 35px;
+        position: absolute;
+        top: 7%;
+        left: 90%;
+        border: none;
+        background-color: white;
+    }
+
+    #the{
+        position: absolute;
+        left: 30%;
+        height: 5vh;
+        width: 15vw;
+      
+        font-size: 15px;
+    }
+    #siren{
+        position: absolute;
+        left: 50%;
+        height: 10vh;
+        width: 25vw ;
+        font-size: 25px;
+    }
+    #bollywood-image img,#tech-image img,#hollywood-image img{
+        width: 90vw;
+        height: 25vh;
+       
+    }
+
+
+
+    .latest{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .latest1,.latest2,.latest3,.latest4,.latest5,.latest6{
+        width: 90vw;
+        height:30vh;
+        flex-direction: column;
+       
+    }
+    .data-container1{
+        flex-direction: column;
+        position: absolute;
+        top: 320%;
+        width: 90vw;
+    }
+
+
+    .data-container{
+        flex-direction: column;
+
+    }
+
+    .home-image-container{
+        flex-direction: column;
+    }
+    .home-latest{
+       position: absolute;
+       top: 120%;
+    }
+    .latest-stories{
+        position: absolute;
+       top: 110%;
+    }
+    .top-stories{
+        position: absolute;
+        top: 310%;
+    }
+    .data-description,.link{
+     width:70vw ;
+     height: 15vh;
+    }
+    .advertisement{
+        display: none;
+    }
+
+
+
+
+
+
+}
