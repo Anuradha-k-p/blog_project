@@ -94,7 +94,7 @@ const Bollywood = () => {
     {
     data.filter((item)=> {return item.category==="bollywood" && item.id===8}).map((element)=>(
       <div className='data4' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" style={{height: "200px"}}></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
         <p>{element.DataDescription}</p>
@@ -198,21 +198,7 @@ const Bollywood = () => {
         </div>
     ))
     }
-    <hr></hr>
-    {
-    data.filter((item)=> {return item.category==="bollywood" && item.id===10}).map((element)=>(
-      <div className='data12' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
-        <div className='data-description'>
-        <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
-        </div>
-        </div>
-    ))
-    }
     </div>
-
-
     <div className='top-posts'>
       <div className='top-posts-heading'>Top Posts <hr className="hr-under3"></hr></div>
       {
@@ -254,7 +240,6 @@ const Bollywood = () => {
         </div>
     ))
     }
-   
     <hr></hr>
     </div>
     <div className='advertisement'>Advertisement</div>
