@@ -5,6 +5,7 @@ import { useContext } from 'react'
 import { store } from './ContextAPI'
 import { Link } from 'react-router-dom'
 import {AiOutlineArrowDown} from 'react-icons/ai'
+import "./Style2.css"
 
 const Home = () => {
   const [data] = useContext(store);
@@ -110,7 +111,7 @@ const Home = () => {
     <div className='top-stories'>
     <h2>Top Stories <hr className="hr-under2"></hr></h2>
     </div>
-    <div className='data-container'>
+    <div className='data-container1'>
     <div className='home-data'>
     {
     data.filter((item)=> {return item.category==="bollywood" && item.id===5}).map((element)=>(
