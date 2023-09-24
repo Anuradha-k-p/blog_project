@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Navbar from './Navbar'
 import "./Components.css"
@@ -53,10 +52,10 @@ const Hollywood = () => {
     {
     data.filter((item)=> {return item.category==="hollywood" && item.id===43}).map((element)=>(
       <div className='data1' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -65,10 +64,10 @@ const Hollywood = () => {
     {
     data.filter((item)=> {return item.category==="hollywood" && item.id===44}).map((element)=>(
       <div className='data2' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -77,10 +76,10 @@ const Hollywood = () => {
     {
     data.filter((item)=> {return item.category==="hollywood" && item.id===45}).map((element)=>(
       <div className='data3' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -89,10 +88,10 @@ const Hollywood = () => {
     {
     data.filter((item)=> {return item.category==="hollywood" && item.id===46}).map((element)=>(
       <div className='data4' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -101,10 +100,10 @@ const Hollywood = () => {
     {
     data.filter((item)=> {return item.category==="hollywood" && item.id===47}).map((element)=>(
       <div className='data5' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -113,10 +112,10 @@ const Hollywood = () => {
     {
     data.filter((item)=> {return item.category==="hollywood" && item.id===48}).map((element)=>(
       <div className='data6' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -125,10 +124,10 @@ const Hollywood = () => {
     {
     data.filter((item)=> {return item.category==="hollywood" && item.id===49}).map((element)=>(
       <div className='data7' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -137,10 +136,10 @@ const Hollywood = () => {
     {
     data.filter((item)=> {return item.category==="hollywood" && item.id===50}).map((element)=>(
       <div className='data8' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -149,10 +148,10 @@ const Hollywood = () => {
     {
     data.filter((item)=> {return item.category==="hollywood" && item.id===51}).map((element)=>(
       <div className='data9' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -161,10 +160,10 @@ const Hollywood = () => {
     {
     data.filter((item)=> {return item.category==="hollywood" && item.id===52}).map((element)=>(
       <div className='data10' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -173,10 +172,10 @@ const Hollywood = () => {
     {
     data.filter((item)=> {return item.category==="hollywood" && item.id===53}).map((element)=>(
       <div className='data11' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -185,10 +184,10 @@ const Hollywood = () => {
     {
     data.filter((item)=> {return item.category==="hollywood" && item.id===54}).map((element)=>(
       <div className='data12' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -200,7 +199,7 @@ const Hollywood = () => {
     data.filter((item)=> {return item.category==="hollywood" && item.id===55}).map((element)=>(
       <div className='top-post1' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
-        <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><h4 className='para1'>{element.DataTitle}</h4></Link>
         <h1>1</h1>
         </div>
     ))
@@ -210,7 +209,7 @@ const Hollywood = () => {
     data.filter((item)=> {return item.category==="hollywood" && item.id===56}).map((element)=>(
       <div className='top-post2' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
-        <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><h4 className='para1'>{element.DataTitle}</h4></Link>
         <h1>2</h1>
         </div>
     ))
@@ -220,7 +219,7 @@ const Hollywood = () => {
     data.filter((item)=> {return item.category==="hollywood" && item.id===57}).map((element)=>(
       <div className='top-post3' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
-        <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><h4 className='para1'>{element.DataTitle}</h4></Link>
         <h1>3</h1>
         </div>
     ))
@@ -230,7 +229,7 @@ const Hollywood = () => {
     data.filter((item)=> {return item.category==="hollywood" && item.id===58}).map((element)=>(
       <div className='top-post4' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
-        <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><h4 className='para1'>{element.DataTitle}</h4></Link>
         <h1>4</h1>
         </div>
     ))
