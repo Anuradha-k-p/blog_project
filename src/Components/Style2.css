@@ -2,6 +2,10 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
+.comps{
+    margin: 0;
+    padding: 0;
+}
 h1{
     text-align: center;
 }
@@ -29,6 +33,17 @@ h1{
     height: 3px;
     background-color: aqua;
     border: none;
+}
+
+.dynamic-con{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.dynamic-child{
+    width: 30vw;
 }
 
 @media only screen and (max-width:1300px){
@@ -62,6 +77,7 @@ h1{
     }
     .main-header{
         margin: 0;
+        width: 100vw;
     }
     .home-advertisement{
         height: 180vh;
@@ -75,7 +91,7 @@ h1{
 
 
 
-@media only screen and (max-width:810px){
+@media only screen and (max-width:820px){
 
     .h1{
         width: 100vw;
@@ -83,16 +99,52 @@ h1{
         height: 20vh;
 
     }
+    .advertisement{
+        display: none;
+    }
+    .main-header{
+        margin: 0;
+        width: 100vw;
+    }
     
     .mobile-menu-icon{
         display: block;
         font-size: 35px;
         position: absolute;
         top: 7%;
-        left: 90%;
+        left: 80%;
         border: none;
         background-color: white;
     }
+    .para{
+        width: 75vw;
+    }
+    .para1{
+        width: 40vw;
+    }
+    .data1,.data2,.data3,.data4,.data5,.data6,.data7,.data8,.data9,.data10,.data11,.data12{
+        height: 40vh;
+        flex-direction: column;
+        margin: 0;
+
+    }
+
+
+    .page-heading{
+        margin: 0;
+        box-sizing: border-box;
+        padding-left: 5%;
+    }
+    .img{
+        width: 10vw;
+        height: 15vh;
+        box-sizing: border-box;
+        padding-left: 10%;
+    
+     
+    }
+   
+
 
     #the{
         position: absolute;
@@ -123,45 +175,87 @@ h1{
     }
     .latest1,.latest2,.latest3,.latest4,.latest5,.latest6{
         width: 90vw;
-        height:30vh;
+        height:45vh;
         flex-direction: column;
+        padding: 0;
        
+    }
+    .main-header{
+        margin: 0;
+        width: 100vw;
     }
     .data-container1{
         flex-direction: column;
         position: absolute;
-        top: 320%;
+        top: 460%;
         width: 90vw;
     }
 
 
     .data-container{
         flex-direction: column;
+        position: absolute;
+        top: 180%;
+        width: 90vw;
+       
 
+    }
+    .data{
+        margin: 0;
+    }
+    .top-posts{
+        margin: 0;
+        box-sizing: border-box;
+        padding-left: 5%;
     }
 
     .home-image-container{
         flex-direction: column;
+        padding: 0;
     }
     .home-latest{
        position: absolute;
-       top: 120%;
+       top: 150%;
     }
     .latest-stories{
         position: absolute;
-       top: 110%;
+       top: 120%;
+       margin: 0;
+       box-sizing: border-box;
+       padding-left: 5%;
     }
     .top-stories{
         position: absolute;
-        top: 310%;
+        top: 450%;
+        margin: 0;
+        box-sizing: border-box;
+        padding-left: 5%;
     }
     .data-description,.link{
-     width:70vw ;
+     width:50vw ;
      height: 15vh;
     }
-    .advertisement{
+    .advertisement,.home-advertisement{
         display: none;
     }
+    .home-data{
+        margin: 0;
+    }
+    
+    .dynamic-con{
+    
+   flex-direction: column;
+   
+}
+.dynamic-child{
+    width: 70vw;
+    box-sizing: border-box;
+    padding-left: 7%;
+}
+.nav{
+    flex-direction: column;
+    width: 100vw;
+}
 
 
 
@@ -169,3 +263,73 @@ h1{
 
 
 }
+
+
+
+@media only screen and (max-width:550px){
+
+    .data1,.data2,.data3,.data4,.data5,.data6,.data7,.data8,.data9,.data10,.data11,.data12{
+        height: 60vh;   
+    }
+    .advertisement,.home-advertisement{
+        display: none;
+    }
+    .data-container{
+        flex-direction: column;
+        position: absolute;
+        top: 210%;
+        width: 90vw;
+       
+
+    }
+
+
+    .data-description,.link{
+        width:50vw ;
+        height: 15vh;
+        margin: 0;box-sizing: border-box;
+        padding-left: 5%;
+       }
+       
+    .mobile-menu-icon{
+        display: block;
+        font-size: 35px;
+        position: absolute;
+        top: 7%;
+        left: 90%;
+        border: none;
+        background-color: white;
+    }
+    .load-more{
+        display: none;
+    }
+    .latest-stories{
+        position: absolute;
+       top: 140%;
+       margin: 0;
+       box-sizing: border-box;
+       padding-left: 5%;
+    }
+    .home-latest{
+        position: absolute;
+        top: 150%;
+        margin: 0;
+     }
+     .data-container1{
+        flex-direction: column;
+        position: absolute;
+        top: 480%;
+        width: 90vw;
+    }
+    .top-stories{
+        position: absolute;
+        top: 470%;
+        margin: 0;
+        box-sizing: border-box;
+        padding-left: 5%;
+    }
+   
+
+}
+
+
