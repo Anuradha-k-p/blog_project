@@ -52,10 +52,10 @@ const Fitness = () => {
     {
     data.filter((item)=> {return item.category==="fitness" && item.id===62}).map((element)=>(
       <div className='data1' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -64,10 +64,10 @@ const Fitness = () => {
     {
     data.filter((item)=> {return item.category==="fitness" && item.id===63}).map((element)=>(
       <div className='data2' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -76,10 +76,10 @@ const Fitness = () => {
     {
     data.filter((item)=> {return item.category==="fitness" && item.id===64}).map((element)=>(
       <div className='data3' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -88,10 +88,10 @@ const Fitness = () => {
     {
     data.filter((item)=> {return item.category==="fitness" && item.id===65}).map((element)=>(
       <div className='data4' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -100,10 +100,10 @@ const Fitness = () => {
     {
     data.filter((item)=> {return item.category==="fitness" && item.id===66}).map((element)=>(
       <div className='data5' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -112,10 +112,10 @@ const Fitness = () => {
     {
     data.filter((item)=> {return item.category==="fitness" && item.id===67}).map((element)=>(
       <div className='data6' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -124,10 +124,10 @@ const Fitness = () => {
     {
     data.filter((item)=> {return item.category==="fitness" && item.id===68}).map((element)=>(
       <div className='data7' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -136,10 +136,10 @@ const Fitness = () => {
     {
     data.filter((item)=> {return item.category==="fitness" && item.id===69}).map((element)=>(
       <div className='data8' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -148,10 +148,10 @@ const Fitness = () => {
     {
     data.filter((item)=> {return item.category==="fitness" && item.id===70}).map((element)=>(
       <div className='data9' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -160,10 +160,10 @@ const Fitness = () => {
     {
     data.filter((item)=> {return item.category==="fitness" && item.id===71}).map((element)=>(
       <div className='data10' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -172,10 +172,10 @@ const Fitness = () => {
     {
     data.filter((item)=> {return item.category==="fitness" && item.id===72}).map((element)=>(
       <div className='data11' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
@@ -184,26 +184,16 @@ const Fitness = () => {
     {
     data.filter((item)=> {return item.category==="fitness" && item.id===73}).map((element)=>(
       <div className='data12' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription}</p>
         </div>
         </div>
     ))
     }
      <hr></hr>
-    {
-    data.filter((item)=> {return item.category==="fitness" && item.id===63}).map((element)=>(
-      <div className='data12' key={element.id}>
-        <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
-        <div className='data-description'>
-        <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
-        </div>
-        </div>
-    ))
-    }
+    
     </div>
     <div className='top-posts'>
       <div className='top-posts-heading'>Top Posts <hr className="hr-under3"></hr></div>
@@ -211,7 +201,7 @@ const Fitness = () => {
     data.filter((item)=> {return item.category==="fitness" && item.id===74}).map((element)=>(
       <div className='top-post1' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
-        <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><h4 className='para1'>{element.DataTitle}</h4></Link>
         <h1>1</h1>
         </div>
     ))
@@ -221,7 +211,7 @@ const Fitness = () => {
     data.filter((item)=> {return item.category==="fitness" && item.id===75}).map((element)=>(
       <div className='top-post2' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
-        <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><h4 className='para1'>{element.DataTitle}</h4></Link>
         <h1>2</h1>
         </div>
     ))
@@ -231,7 +221,7 @@ const Fitness = () => {
     data.filter((item)=> {return item.category==="fitness" && item.id===76}).map((element)=>(
       <div className='top-post3' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
-        <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><h4 className='para1'>{element.DataTitle}</h4></Link>
         <h1>3</h1>
         </div>
     ))
@@ -241,7 +231,7 @@ const Fitness = () => {
     data.filter((item)=> {return item.category==="fitness" && item.id===77}).map((element)=>(
       <div className='top-post4' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
-        <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
+        <Link to={`/detaildescription/${element.id}`} className='link'><h4 className='para1'>{element.DataTitle}</h4></Link>
         <h1>4</h1>
         </div>
     ))
