@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { store } from './ContextAPI'
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import {AiTwotoneLike} from 'react-icons/ai'
 import {GrShareOption} from 'react-icons/gr'
 import {AiFillFacebook} from 'react-icons/ai'
@@ -12,14 +12,26 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import {RxCross2} from 'react-icons/rx'
 import { useState } from 'react';
 
+
 const DetailDescription = () => {
   const [data]=useContext(store);
+  
   var {id}=useParams();
+  const Category = data[id].category
+  
+  const syths = data.filter((item) => item.category === Category ).slice(0,3)
+  console.log(Category)
+  console.log(syths)
   id=Number(id);
+  //const myth = useNavigate()
   const[isMobile,setIsMobile]=useState(false);
+  const navi  = useNavigate();
   return (
-    <>
+
+   <>
+   <button className='myth' onClick={() => navi(-1)}>back</button>
     <div className='detail-header'>
+    
       <h1><span id="header-the">THE</span><span id="header-siren">SIREN</span></h1>
     </div>
       <div className={isMobile ? "nav-links-mobile" : "nav2"} onClick={()=>{setIsMobile(false)}}>
@@ -33,7 +45,9 @@ const DetailDescription = () => {
         <button className='mobile-menu-icon' onClick={()=>{setIsMobile(!isMobile)}}>
         {isMobile ? <RxCross2/> : <GiHamburgerMenu/> }
         </button>
-    <div className='like-share'>
+        {/* <Link to="/"><button className='back'>Back</button></Link> */}
+        
+      <div className='like-share'> 
     <div className='like'>
       <AiTwotoneLike/> 
       <p>Like</p>
@@ -45,9 +59,9 @@ const DetailDescription = () => {
     </div>
     <div className='detail-content'>
     {
-    data.filter((item)=>{return item.id===id}).map((element)=>(
+    data.filter((item)=>{return item.id===id}).map((element,index)=>(
     <div>
-    <div className='detail-title' key={element.id}>
+    <div className='detail-title' key={index}>
     <h2>{element.DataTitle}</h2>
     </div>
     <div className='person'>
@@ -78,8 +92,8 @@ const DetailDescription = () => {
     </div>
     <hr className='detail-hr'></hr>
     {
-    data.filter((item)=>{return item.id===id}).map((element)=>(
-    <div className='person-2' key={element.id}>
+    data.filter((item)=>{return item.id===id}).map((element,index)=>(
+    <div className='person-2' key={index}>
     <img src={element.avatar}  alt="" className='avatar'></img>
     <div>
     <p className='written'>&nbsp;&nbsp;WRITTEN BY</p>
@@ -94,10 +108,10 @@ const DetailDescription = () => {
     <h2>More from The Siren</h2>
     <hr className='footer-hr'></hr>
     <div className='footer-items'>
-    <div className='more-1'>
+    <div className='dynamic-con'>
     {
-    data.filter((item)=>{return item.id===99}).map((element)=>(
-      <div className='more1-data' key={element.id}>
+   syths.map((element,index)=>(
+      <div className='dynamic-child' key={index}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
         <div  className='more-avatar'>
@@ -110,7 +124,7 @@ const DetailDescription = () => {
       </div>
     ))}
     </div>
-    <div className='more-2'>
+    {/* <div className='more-2'>
     {
     data.filter((item)=>{return item.id===100}).map((element)=>(
       <div className='more2-data' key={element.id}>
@@ -141,7 +155,7 @@ const DetailDescription = () => {
         </div>
       </div>
     ))}
-    </div>
+    </div> */}
     </div>
     </div>
     </>
