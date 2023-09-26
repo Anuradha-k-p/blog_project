@@ -4,7 +4,7 @@ import "./Components.css"
 import { useContext } from 'react'
 import { store } from './ContextAPI'
 import { Link } from 'react-router-dom'
-import {AiOutlineArrowDown} from 'react-icons/ai'
+//import {AiOutlineArrowDown} from 'react-icons/ai'
 
 const Hollywood = () => {
   const [data] = useContext(store);
@@ -238,7 +238,10 @@ const Hollywood = () => {
     </div>
     <div className='advertisement'>Advertisement</div>
     </div>
-    <div className='load-more'><AiOutlineArrowDown/>LOAD MORE</div>
+    <div className='swap'>
+      {/* <footer/> */}
+    </div>
+    {/* <div className='load-more'><AiOutlineArrowDown/>LOAD MORE</div> */}
     </>
   )
 }
