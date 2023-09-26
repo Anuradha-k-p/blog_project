@@ -4,9 +4,9 @@ import "./Components.css"
 import { useContext } from 'react'
 import { store } from './ContextAPI'
 import { Link } from 'react-router-dom'
-import {AiOutlineArrowDown} from 'react-icons/ai'
+//import {AiOutlineArrowDown} from 'react-icons/ai'
 import "./Style2.css"
-
+import Footer from './Footer'
 const Home = () => {
   const [data] = useContext(store);
   return (
@@ -47,7 +47,7 @@ const Home = () => {
       <div className='latest1' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p>{element.DataDescription.slice(0,40)}</p>
         </div>
     ))
     }
@@ -58,7 +58,7 @@ const Home = () => {
       <div className='latest2' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p>{element.DataDescription.slice(0,40)}</p>
         </div>
     ))
     }
@@ -69,7 +69,7 @@ const Home = () => {
       <div className='latest3' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link> 
-        <p>{element.DataDescription}</p>
+        <p>{element.DataDescription.slice(0,40)}</p>
         </div>
     ))
     }
@@ -80,7 +80,7 @@ const Home = () => {
       <div className='latest4' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link> 
-        <p>{element.DataDescription}</p>
+        <p>{element.DataDescription.slice(0,30)}</p>
         </div>
     ))
     }
@@ -91,7 +91,7 @@ const Home = () => {
       <div className='latest5' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link> 
-        <p>{element.DataDescription}</p>
+        <p>{element.DataDescription.slice(0,30)}</p>
         </div>
     ))
     }
@@ -102,7 +102,7 @@ const Home = () => {
       <div className='latest6' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link> 
-        <p>{element.DataDescription}</p>
+        <p>{element.DataDescription.slice(0,80)}</p>
         </div>
     ))
     }
@@ -312,9 +312,18 @@ const Home = () => {
     </div>
     <div className='home-advertisement'>Advertisement</div>
     </div>
-    <div className='load-more'><AiOutlineArrowDown/>LOAD MORE</div>
+    
+
+    { /*</div> <div className='load-more'><AiOutlineArrowDown/>LOAD MORE</div> */}
+
+    <div className='home-footer'>
+      <Footer/>
+    </div>
     </>
+
   )
+
 }
+
 
 export default Home
