@@ -4,7 +4,8 @@ import "./Components.css"
 import { useContext } from 'react'
 import { store } from './ContextAPI'
 import { Link } from 'react-router-dom'
-import {AiOutlineArrowDown} from 'react-icons/ai'
+//import {AiOutlineArrowDown} from 'react-icons/ai'
+import Footer from './Footer'
 
 const Technology = () => {
   const [data] = useContext(store);
@@ -19,7 +20,7 @@ const Technology = () => {
       <div className='latest1' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p>{element.DataDescription.slice(0,120)}</p>
         </div>
     ))
     }
@@ -30,7 +31,7 @@ const Technology = () => {
       <div className='latest2' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p>{element.DataDescription.slice(0,120)}</p>
         </div>
     ))
     }
@@ -41,7 +42,7 @@ const Technology = () => {
       <div className='latest3' key={element.id}>
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link> 
-        <p>{element.DataDescription}</p>
+        <p>{element.DataDescription.slice(0,120)}</p>
         </div>
     ))
     }
@@ -55,7 +56,7 @@ const Technology = () => {
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p>{element.DataDescription.slice(0,120)}</p>
         </div>
         </div>
     ))
@@ -67,7 +68,7 @@ const Technology = () => {
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p>{element.DataDescription.slice(0,120)}</p>
         </div>
         </div>
     ))
@@ -79,7 +80,7 @@ const Technology = () => {
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p>{element.DataDescription.slice(0,120)}</p>
         </div>
         </div>
     ))
@@ -91,7 +92,7 @@ const Technology = () => {
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p>{element.DataDescription.slice(0,120)}</p>
         </div>
         </div>
     ))
@@ -238,7 +239,10 @@ const Technology = () => {
     </div>
     <div className='advertisement'>Advertisement</div>
     </div>
-    <div className='load-more'><AiOutlineArrowDown/>LOAD MORE</div>
+    <div className='tech-footer'>
+      <Footer/>
+    </div>
+    {/* <div className='load-more'><AiOutlineArrowDown/>LOAD MORE</div> */}
     </>
   )
 }
