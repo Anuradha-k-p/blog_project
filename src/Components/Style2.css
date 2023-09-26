@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
     font-family: 'Montserrat', sans-serif;
 }
@@ -96,7 +96,7 @@ h1{
     .h1{
         width: 100vw;
         margin: 0;
-        height: 20vh;
+        height: 30vh;
 
     }
     .advertisement{
@@ -105,6 +105,16 @@ h1{
     .main-header{
         margin: 0;
         width: 100vw;
+        height: 30vh;
+    }
+    .nav{
+        display: none;
+    }
+    .nav-links-mobile{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
     }
     
     .mobile-menu-icon{
@@ -257,10 +267,26 @@ h1{
     width: 100vw;
 }
 
+.home-footer{
+    width: 100vw;
+    position: absolute;
+    top: 1050%;
+    left: 0%;
+}
 
-
-
-
+.Fitness-footer,.bollywood-footer,.tech-footer{
+    width: 100vw;
+    position: absolute;
+    top: 765%;
+    left: 0%;
+   
+}
+.Food-Footer{
+    width: 100vw;
+    position: absolute;
+    top: 720%;
+    left: 0%;
+}
 
 }
 
@@ -281,6 +307,21 @@ h1{
         width: 90vw;
        
 
+    }
+    
+    .h1{
+        width: 100vw;
+        margin: 0;
+        height: 30vh;
+
+    }
+    .advertisement{
+        display: none;
+    }
+    .main-header{
+        margin: 0;
+        width: 100vw;
+        height: 30vh;
     }
 
 
@@ -328,8 +369,51 @@ h1{
         box-sizing: border-box;
         padding-left: 5%;
     }
+    .bye{
+        position:absolute;
+        width: 100vw;
+        top:1320%;
+        left:0%
+        
+    }
+    
+.home-footer{
+    width: 100vw;
+    position: absolute;
+    top: 1330%;
+    left: 0%;
+}
+
+.Fitness-footer,.bollywood-footer,.tech-footer{
+    width: 100vw;
+    position: absolute;
+    top: 1060%;
+    left: 0%;
    
+}
+.Food-Footer{
+    width: 100vw;
+    position: absolute;
+    top: 990%;
+    left: 0%;
+}
 
 }
 
+
+   /* .ft{
+    display:none
+   } */
+
+
+
+.myth {
+    height: 5vh;
+    width: 10vw;
+    background-color: black;
+    color: azure;
+    position:fixed;
+    top:25%;
+    left:70%;
+  }
 
