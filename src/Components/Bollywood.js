@@ -4,7 +4,8 @@ import "./Components.css"
 import { useContext } from 'react'
 import { store } from './ContextAPI'
 import { Link } from 'react-router-dom'
-import {AiOutlineArrowDown} from 'react-icons/ai'
+//import {AiOutlineArrowDown} from 'react-icons/ai'
+import Footer from './Footer'
 
 const Bollywood = () => {
   const [data] = useContext(store);
@@ -20,7 +21,7 @@ const Bollywood = () => {
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <div>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p>{element.DataDescription.slice(0,120)}</p>
         </div>
         </div>
     ))
@@ -33,7 +34,7 @@ const Bollywood = () => {
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <div>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p>{element.DataDescription}</p>
+        <p>{element.DataDescription.slice(0,120)}</p>
         </div>
         </div>
     ))
@@ -46,7 +47,7 @@ const Bollywood = () => {
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt=""></img></Link>
         <div>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link> 
-        <p>{element.DataDescription}</p>
+        <p>{element.DataDescription.slice(0,120)}</p>
         </div>
         </div>
     ))
@@ -61,7 +62,7 @@ const Bollywood = () => {
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p className='para'>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription.slice(0,120)}</p>
         </div>
         </div>
     ))
@@ -73,7 +74,7 @@ const Bollywood = () => {
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p className='para'>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription.slice(0,120)}</p>
         </div>
         </div>
     ))
@@ -85,7 +86,7 @@ const Bollywood = () => {
         <Link to={`/detaildescription/${element.id}`} className='link'><img src={element.DataImage} alt="" className='img'></img></Link>
         <div className='data-description'>
         <Link to={`/detaildescription/${element.id}`} className='link'><h4>{element.DataTitle}</h4></Link>
-        <p className='para'>{element.DataDescription}</p>
+        <p className='para'>{element.DataDescription.slice(0,120)}</p>
         </div>
         </div>
     ))
@@ -244,7 +245,10 @@ const Bollywood = () => {
     </div>
     <div className='advertisement'>Advertisement</div>
     </div>
-    <div className='load-more'><AiOutlineArrowDown/>LOAD MORE</div>
+    <div className='bollywood-footer'>
+      <Footer/>
+    </div>
+    {/* <div className='load-more'><AiOutlineArrowDown/>LOAD MORE</div> */}
     </>
   )
 }
